@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #c0c0c0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background: #040c28;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  background-image: url("./img/bg-art.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.login {
+  font-family: Verdana, Arial, "Times New Roman", sans-serif;
+}
+
+.login-form {
+  background: #464747;
+  width: 320px;
+  padding: 20px;
+  margin-bottom: 50px;
+  color: #c0c0c0;
+}
+
+.form-title {
+  text-align: center;
+  color: #909090;
+  background: #333333;
+}
+
+input {
+  width: 180px;
+}
+
+.email-password {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px 0px;
+}
+
+.email-password input {
+  background: #363636;
+  outline: none;
+  color: #c0c0c0;
+  padding: 2px;
+}
+
+.remember-login {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2c2c2c;
+  box-shadow: 0px 0.5px #747474;
+}
+
+#btn {
+  background: #424343;
+  display: block;
+  margin-top: 20px;
+  padding: 0.3rem 2rem;
+  color: #c0c0c0;
+  border-top: 3px solid #757575;
+  border-left: 3px solid #757575;
+  border-right: 3px solid #2c2c2c;
+  border-bottom: 3px solid #2c2c2c;
+  cursor: pointer;
+}
