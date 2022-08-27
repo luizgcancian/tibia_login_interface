@@ -39,6 +39,10 @@ p {
   gap: 50px;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .login {
   font-family: Verdana, Arial, "Times New Roman", sans-serif;
 }
