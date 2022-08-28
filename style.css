@@ -6,6 +6,7 @@ body,
 ul {
   margin: 0;
   padding: 0;
+  font-family: Verdana, Arial, "Times New Roman", sans-serif;
 }
 
 a {
@@ -31,6 +32,7 @@ p {
   background-image: url("./img/bg-art.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -99,4 +101,78 @@ input {
   border-right: 3px solid #2c2c2c;
   border-bottom: 3px solid #2c2c2c;
   cursor: pointer;
+}
+
+.hide-form.active {
+  display: none;
+}
+
+/* character, lvl, vocation */
+
+.character-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.character-card div {
+  padding: 10px;
+  border: 1px solid black;
+  color: #c0c0c0;
+}
+
+.char-wrapper {
+  background: #444444;
+  width: 500px;
+  height: 300px;
+  padding: 15px;
+  overflow: auto;
+  display: none;
+}
+
+.char-wrapper.active {
+  display: block;
+}
+
+.character-card.title div {
+  background: #363636;
+  font-weight: 600;
+  border: 1px solid black;
+  box-shadow: 0px 1px 0px #363636;
+  color: #9f9f9f;
+}
+
+.char-wrapper .character-card:nth-child(odd) {
+  background: #484848;
+}
+
+#char-btn {
+  display: flex;
+  justify-content: end;
+}
+
+#char-btn button {
+  background: #484848;
+}
+
+.character-card:not(:first-child):hover {
+  background: #565555;
+}
+
+.thanks {
+  height: 300px;
+  width: 400px;
+  background: #444444;
+  display: flex;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: none;
+}
+
+.thanks.active {
+  display: flex;
 }

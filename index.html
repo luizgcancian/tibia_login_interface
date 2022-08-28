@@ -15,26 +15,54 @@
     <main class="main bg-body">
         <!-- Container -->
         <section class="container">
+
             <div class="logo">
                 <img src="./img/tibia-logo.png" alt="Tibia Logo">
             </div>
             <!-- Log IN -->
-            <div class="login">
-                <p class="form-title">Journey Onwards</p>
-                <form action="" class="login-form">
-                    <div class="email-password">
-                        <label for="email">Email: </label>
-                        <input type="text" id="email">
-                        <label for="password">Password: </label>
-                        <input type="password" id="password">
-                    </div>
-                    <div class="remember-login">
-                        <a href="#">Forgot password and/or email</a>
-                        <a href="#">Create new account</a>
-                    </div>
-                    <button type="submit" id="btn">Login</button>
-                </form>
+            <div class="hide-form">
+                <div class="login">
+                    <p class="form-title">Journey Onwards</p>
+                    <form action="" class="login-form">
+                        <div class="email-password">
+                            <label for="email">Email: </label>
+                            <input type="text" id="email">
+                            <label for="password">Password: </label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="remember-login">
+                            <a href="#">Forgot password and/or email</a>
+                            <a href="#">Create new account</a>
+                        </div>
+                        <button type="submit" id="btn" class="btn-login">Login</button>
+                    </form>
+                </div>
             </div>
+
+            <article class="char-wrapper">
+                <div class="mega-wrapper">
+                    <div class="character-card title">
+                        <div class="character-name">
+                            <p>Character</p>
+                        </div>
+                        <div class="character-level">
+                            <p>Level</p>
+                        </div>
+                        <div class="character-vocation">
+                            <p>Vocation</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div id="char-btn">
+                    <button id="btn" class="btn-character">Ok</button>
+                </div>
+            </article>
+
+            <article class="thanks">
+                <p>Obrigo por utilizar o projeto. Feito em HTML, CSS e o Fetch API do JS para pegar as informações dos personagens. </p>
+            </article>
+
 
         </section>
     </main>
